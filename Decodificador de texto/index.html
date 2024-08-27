@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <header><img src="Frame 6.png" alt="Alura logo"></header>
+  <body>
+    <div class="container">
+      <div class="criptografar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Insira seu texto aqui"
+        ></textarea>
+
+        <div class="terminais">
+          <p>Somente letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botoes">
+          <button class="btn-criptografar" type="button" onclick="criptografar()">
+            Criptografar
+          </button>
+          <input
+            type="button"
+            class="btn-descriptografar"
+            value="Descriptografar"
+            onclick="descriptografar()"
+          />
+        </div>
+      </div>
+      <div class="criptografado">
+        <img src="Foto menina.png" alt="" id="menina" />
+        <div class="mensagem-criptografada" id="mensagem-criptografada">
+          <h2 id="titulo-mensagem">Nenhuma mensagem encontrada</h2>
+          <p id="paragrafo">
+            Insira o texto que deseja descriptografar ou criptografar
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="rodape">Feito por josé</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
